@@ -1,0 +1,44 @@
+.links {
+    display: flex;
+    padding: 2rem;
+    /* width: 200px; */
+    box-sizing: inherit;
+    cursor: pointer;
+    /* position: static; */
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.gitHubImage{
+    object-fit: contain;
+    height:3rem;
+    width:3rem;
+    margin: 0 1rem;
+    align-items: center;
+    transition: 0.5s; 
+}
+
+.gitHubImage:hover {
+    transform: scale(1.5) translateY(-10px); /* Moves image upward */ /* Increases size by 20% on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+.LinkedInImage{
+    object-fit: cover;
+    height:3rem;
+    width:3rem;
+    margin: 0 1rem;
+    align-items: center;
+     /* Standard transition property */
+     transition: transform 0.5s ease; /* Shorthand combining properties */
+
+     /* Vendor-prefixed transition for WebKit browsers (Chrome, Safari, older Opera) */
+     /*-webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease; /* Webkit-specific for better compatibility */
+}
+
+.LinkedInImage:hover {
+    transform: scale(1.5) translateY(-10px); /* Moves image upward */ /* Increases size by 20% on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}

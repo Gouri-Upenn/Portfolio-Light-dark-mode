@@ -1,0 +1,40 @@
+
+    #intro{
+    height:calc(100vh-5rem);
+    width: 100%;
+    max-width:75rem;
+    margin:0 auto;
+    padding-top: 3rem;
+    /* margin:0 auto; */
+    overflow:hidden;
+    /* position:relative; */
+    text-align: center; /* Aligns text to the center horizontally */
+}
+.hello{
+    font-size: 2rem;
+}
+.text{
+    font-size: 3rem;   
+ 
+}
+
+.name{
+    font-size: 3rem;
+    color:  #F8A805;
+    font-weight: bold;
+    
+}
+.introductionText{
+    width:100%;
+    font-size: 1.75rem; 
+    /* display: flex; */
+    flex-direction: column;
+}
+.additionalText{
+    font-size: 1.3rem; 
+}
+
+.highlightedWord{
+    color:  #F8A805;
+    font-weight: bold;
+}

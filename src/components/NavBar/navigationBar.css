@@ -1,0 +1,59 @@
+.navigationBar{
+    height:5rem;
+    width:100vw;
+    margin:0 ;
+    padding:1rem 2rem;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    /* position:sticky; */
+    top:0;
+    z-index:3;
+}
+
+.Logo{
+    padding:0;
+    width: 125px;
+    height: 50px;
+    box-sizing: inherit;
+    cursor:pointer;
+    margin:0;  
+}
+.desktopMenuListItem{
+    margin: 2rem;
+    cursor:pointer;
+    color: var(--secondary-color);
+    text-decoration: none;
+    letter-spacing: 4px;
+    position: relative; /* Needed for pseudo-element */
+    overflow: hidden; /* Ensures highlight stays within bounds */
+    box-shadow: inset 0 0 0 0 #F8A805;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
+}
+.desktopMenuListItem:hover{
+    color:white;
+    box-shadow: inset 300px 0 0 0 #F8A805;
+}
+
+.theme-icon { /*Sun and the moon icons*/
+    width: 40px;
+    height: 40px;
+    border:none;
+    transition: transform 0.5s ease; /* Shorthand combining properties */
+    filter: grayscale(100%);
+}
+
+  .theme-toggle-btn{ /*This is the button functionality*/
+    border:none;
+    cursor:pointer;
+    transition: transform 0.5s ease; /* Shorthand combining properties */
+  }
+
+
+  .theme-toggle-btn:hover .theme-icon {
+    transform: scale(1.2); /* Slight zoom on hover */
+  }
+
+
+

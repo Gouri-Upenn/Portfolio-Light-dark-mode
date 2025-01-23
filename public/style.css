@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background:transparent;
+    font-family: 'poppins';
+}
+
+/*Default light theme*/
+:root{
+    --primary-color:linear-gradient(112.5deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,
+    rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%,
+     rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%,
+      rgb(99, 99, 99) 100%),linear-gradient(157.5deg, rgb(214, 214, 214) 0%,
+    rgb(80, 5, 255) 88%,rgb(125, 2, 248) 88%, rgb(94, 3, 250) 91%,
+    rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),
+    linear-gradient(90deg, rgb(253, 253, 255),rgb(114, 4, 248));
+    --secondary-color:black;
+}
+.dark-theme{   
+    --primary-color:linear-gradient(45deg, #000000, #1c1a1c, #5f5e5e);
+    --secondary-color:rgb(255, 255, 255);
+}
+
+body{
+    background: var(--primary-color);
+    background-blend-mode: overlay,overlay,overlay,normal;
+   /* opacity: 0.7;*/
+    margin: 0;
+    height:100vh;
+    color:var(--secondary-color);
+    overflow:hidden;
+    overflow-y:scroll;
+    z-index: 2;
+}
